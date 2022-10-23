@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body class="payCardBody">
+    <div class="conteinerPT">
+        <section class="cardForm" id="cardForm">
+            <div class="front">
+                <div class="logo-brand" id="logoBrand1">
+                    <!-- <img src="images/visa.png"  alt="">-->
+
+                </div>
+                <img src="/images/chip-tarjeta.png" class="chip" alt="">
+                <div class="datos" id="number">
+                    <div class="groups">
+                        <p class="labelCard">Card Number</p>
+                        <p class="numberCard">#### #### #### ####</p>
+                    </div>
+                    <div class="card-name">
+                        <div class="groups" id="name">
+                            <p class="labelCard">Card Name</p>
+                            <p class="name">Jhon Doe</p>
+                        </div>
+                        <div class="groups" id="expiration">
+                            <p class="labelCard">Expiration</p>
+                            <p class="expiration"> <span class="month">MM</span>/ <span class="year">AA</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back">
+                <div class="magnetic"> </div>
+                <div class="datos">
+                    <div class="groups" id="sign">
+                        <p class="labelCard">Signature</p>
+                        <div class="sign">
+                            <p></p>
+                        </div>
+
+                    </div>
+                    <div class="groups" id="ccv">
+                        <p class="labelCard">CCV</p>
+                        <p class="ccv"></p>
+                    </div>
+                </div>
+                <p class="legend">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dolores.</p>
+                <a href="#" class="link-bank">www.tubanco.com</a>
+            </div>
+
+        </section>
+
+        <div class="conteiner-btn">
+            <button class="btn-open-close" id="btn-open-close"> <i class="fas fa-plus"></i></button>
+        </div>
+
+
+        <form action="" id="creditForm" class="creditForm">
+            <div class="groups">
+                <label for="inputNumber"> Card Number</label>
+                <input type="text" id="inputNumber" maxlength="19" autocomplete="off">
+            </div>
+
+            <div class="groups">
+                <label for="inputName"> Card Name</label>
+                <input type="text" id="inputName" maxlength="19" autocomplete="off">
+            </div>
+
+            <div class="flexbox">
+                <div class="group-expire">
+                    <label for="selectMonth">Expiration</label>
+                    <div class="flexbox">
+                        <div class="group-select">
+                            <select name="month" id="selectMonth">
+                                <option disabled selected>Month</option>
+
+                            </select>
+
+                            <i class="fas fa-angle-down"></i>
+
+                        </div>
+
+
+                        <div class="group-select">
+                            <select name="year" id="selectYear">
+                                <option disabled selected>Year</option>
+
+                            </select>
+
+                            <i class="fas fa-angle-down"></i>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="group-ccv">
+                    <label for="inputccv">ccv</label>
+                    <input type="text" maxlength="3" id="inputCCV">
+                </div>
+            </div>
+            <button type="submit" class="btn-submitT">submit</button>
+
+        </form>
+
+
+
+
+    </div>
+    <script src="card.js"></script>
+</body>
+
+</html>
